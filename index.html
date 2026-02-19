@@ -1,26 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head> 
-  <meta charset=UTF-8>
-  <meta nome="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Artisan</title>
-  <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Loja</title>
+
+  <!-- Font Awesome -->
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  </head>
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <body>
-    <header class="header">
-      <div class="logo">
-        Artisan
-      </div>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-      <div class="header-icons">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
-      </div>
-    </header>
-    
-  </body>
+    body {
+      background-color: #111;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #000;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 25px;
+      font-size: 20px;
+    }
+
+    .icons a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .icons a:hover {
+      color: #ffbd59;
+    }
+
+    main {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <img src="logo.svg" alt="Logo">
+    </a>
+
+    <!-- Ícones -->
+    <div class="icons">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#"><i class="fa-regular fa-heart"></i></a>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Bem-vindo à loja</h1>
+    <p>Moda, estilo e autenticidade.</p>
+  </main>
+
+</body>
 </html>
