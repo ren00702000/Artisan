@@ -37,3 +37,21 @@ body {
   transition: 0.3s;
 }
 
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .header {
+    padding: 16px 20px;
+  }
+
+  .logo {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .header-icons {
+    gap: 16px;
+    font-size: 16px;
+  }
+
+}
