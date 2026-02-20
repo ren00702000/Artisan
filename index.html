@@ -5,8 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artisan</title>
 
-  <body> <em><h1>Artisan.</h1></em>
-  <p> A wearable museum. <br> For artists, by artists. <br> For humans, by humans. </p>
-  </body>
-</html>
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #000;
+    }
+
+    .logo img {
+      height: 70px;
+      width: auto;
+    }
+
+    .nav-icons {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 20px;
+    }
+
+    .nav-icons a {
+      color: white;
+      text-decoration: none;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    .nav-icons a:hover {
+      color: #ffbd59;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -8px;
+      right: -10px;
+      background: #ffbd59;
+      color: black;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 50%;
+    }
+
+    main {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 18px;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 20px;
+      }
+
+      .logo img {
+        height: 50px;
+      }
+
+      main h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <img src="Artisan-logo.svg" alt="Artisan Logo">
+    </a>
+
+    <!-- Ícones -->
+    <div class="nav-icons">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#"><i class="fa-regular fa-heart"></i></a>
+      <a href="#">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Bem-vindo à Artisan</h1>
+    <p>Moda, autenticidade e estilo.</p>
+  </main>
+
+</body>
+</html>
