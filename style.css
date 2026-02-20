@@ -18,11 +18,10 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-.logo {
-  font-size: 20px;
-  letter-spacing: 4px;
-  font-weight: 500;
-  cursor: pointer;
+.logo img {
+  height: 120px;
+  width: auto;
+  display: block;
 }
 
 .header-icons {
