@@ -19,7 +19,7 @@ body {
 }
 
 .logo img {
-  height: 120px;
+  height: 400px;
   width: auto;
   display: block;
 }
@@ -44,8 +44,8 @@ body {
   }
 
   .logo {
-    font-size: 16px;
-    letter-spacing: 3px;
+    font-size: 300px;
+    letter-spacing: 30px;
   }
 
   .header-icons {
