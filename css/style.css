@@ -1,109 +1,56 @@
-/* RESET */
-* {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
-body {
-  background: #ffffff;
-  color: #111;
-  line-height: 1.5;
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-/* CONTAINER */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+.font-inter {
+  font-family: 'Inter', sans-serif;
 }
 
-/* HEADER */
-.header {
-  border-bottom: 1px solid #eee;
-  padding: 16px 0;
+/* CARDS */
+
+.cards-container {
+  perspective: 1000px;
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #111;
-}
-
-.nav-icons {
-  display: flex;
-  gap: 16px;
-}
-
-.icon-btn {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-/* HERO */
-.hero {
-  padding: 80px 0;
-  text-align: center;
-}
-
-.btn-primary {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-}
-
-/* PRODUCTS */
-.featured-products {
-  padding: 60px 0;
-}
-
-.products-grid {
-  margin-top: 30px;
-  display: grid;
-  gap: 20px;
-}
-
-/* BRAND */
-.brand-section {
-  padding: 60px 0;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-/* FOOTER */
-.footer {
-  padding: 30px 0;
-  border-top: 1px solid #eee;
-  text-align: center;
-}
-.product-card {
-  border: 1px solid #eee;
-  padding: 16px;
-  text-align: center;
-}
-
-.product-card img {
+.card {
+  position: fixed;
   width: 100%;
-  height: auto;
+  max-width: 300px;
+  aspect-ratio: 9 / 16;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  border-radius: 20px;
+  overflow: hidden;
+  will-change: transform;
 }
 
-.product-card h3 {
-  margin: 10px 0 5px;
+/* ... continue colando TODO seu CSS aqui ... */
+
+/* Toast (faltava no seu CSS original) */
+.toast-notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #facc15;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 100;
 }
 
-.product-card p {
-  font-weight: bold;
+.toast-notification.show {
+  opacity: 1;
 }

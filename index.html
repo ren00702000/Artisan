@@ -1,72 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="h-full">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Artisan — Minimalismo com identidade." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artisan</title>
 
-  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="h-full bg-black font-inter overflow-hidden">
+  <div id="app" class="h-full w-full relative">
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-content">
-      <a href="index.html" class="logo">Artisan</a>
-
-      <nav class="nav-icons">
-        <button class="icon-btn" aria-label="Buscar">🔍</button>
-        <button class="icon-btn" aria-label="Favoritos">♡</button>
-        <a href="cart.html" class="icon-btn" aria-label="Carrinho">🛒</a>
-      </nav>
+    <!-- Brand -->
+    <div id="brandContainer" class="brand-title">
+      <h1 id="brandTitle" class="font-bebas text-5xl tracking-widest text-white text-center float-animation">
+        ARTISAN
+      </h1>
     </div>
-  </header>
 
+    <!-- Botões topo -->
+    <button id="favoritesBtn" class="icon-button favorites-btn"></button>
+    <button id="cartBtn" class="icon-button cart-btn"></button>
+    <button id="searchBtn" class="search-btn"></button>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1>Nova Coleção</h1>
-      <p>Minimalismo com identidade.</p>
-      <a href="collection.html" class="btn-primary">Explorar</a>
+    <!-- Overlay busca -->
+    <div id="searchOverlay" class="search-overlay">
+      <!-- conteúdo da busca -->
     </div>
-  </section>
 
+    <!-- Cards -->
+    <div class="cards-container h-full w-full relative overflow-hidden" id="cardsContainer"></div>
 
-  <!-- FEATURED PRODUCTS (DINÂMICO FUTURAMENTE) -->
-  <section class="featured-products">
-    <div class="container">
-      <h2>Destaques</h2>
-
-      <!-- Aqui o JS vai inserir os produtos -->
-      <div id="featured-products-container" class="products-grid"></div>
-
+    <!-- Product Detail -->
+    <div id="productDetail" class="product-detail">
+      <!-- conteúdo detalhado -->
     </div>
-  </section>
 
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal-overlay"></div>
 
-  <!-- MANIFESTO / NEWSLETTER -->
-  <section class="brand-section">
-    <div class="container">
-      <h2>Mais que roupa</h2>
-      <p>
-        A Artisan nasce da ideia de que vestir é comunicar.
-        Cada peça carrega intenção.
-      </p>
-    </div>
-  </section>
+    <!-- Favorites Modal -->
+    <div id="favoritesModal" class="modal-overlay"></div>
 
+    <!-- Checkout -->
+    <div id="checkoutPage" class="checkout-page"></div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Artisan. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    <!-- Success -->
+    <div id="successModal" class="success-modal"></div>
 
-  <script src="./js/products.js"></script>
-  <script src="./js/main.js"></script>
+    <!-- Toast -->
+    <div id="toast" class="toast-notification"></div>
+
+  </div>
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
 </body>
 </html>
