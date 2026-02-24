@@ -89,3 +89,21 @@ body {
   border-top: 1px solid #eee;
   text-align: center;
 }
+.product-card {
+  border: 1px solid #eee;
+  padding: 16px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  font-weight: bold;
+}
