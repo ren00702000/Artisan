@@ -1,66 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="h-full">
-<head>
+<html lang="pt-BR">
+ 
+<head> 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="device-width, initial-scale=1.0">
+  <meta name="description" content="Arte para se vestir.">
   <title>Artisan</title>
-
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- CSS externo -->
+ 
   <link rel="stylesheet" href="style.css">
-</head>
 
-<body class="h-full bg-black font-inter overflow-hidden">
-  <div id="app" class="h-full w-full relative">
+  <body>
 
-    <!-- Brand -->
-    <div id="brandContainer" class="brand-title">
-      <h1 id="brandTitle" class="font-bebas text-5xl tracking-widest text-white text-center float-animation">
-        ARTISAN
-      </h1>
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="header-left">
+      <button class="menu-btn">☰</button>
     </div>
 
-    <!-- Botões topo -->
-    <button id="favoritesBtn" class="icon-button favorites-btn"></button>
-    <button id="cartBtn" class="icon-button cart-btn"></button>
-    <button id="searchBtn" class="search-btn"></button>
-
-    <!-- Overlay busca -->
-    <div id="searchOverlay" class="search-overlay">
-      <!-- conteúdo da busca -->
+    <div class="header-center">
+      <h1 class="logo">Artisan</h1>
     </div>
 
-    <!-- Cards -->
-    <div class="cards-container h-full w-full relative overflow-hidden" id="cardsContainer"></div>
-
-    <!-- Product Detail -->
-    <div id="productDetail" class="product-detail">
-      <!-- conteúdo detalhado -->
+    <div class="header-right">
+      <button class="search-btn">🔍</button>
+      <button class="favorites-btn">♡</button>
+      <button class="cart-btn">🛍</button>
     </div>
 
-    <!-- Cart Modal -->
-    <div id="cartModal" class="modal-overlay"></div>
+  </header>
 
-    <!-- Favorites Modal -->
-    <div id="favoritesModal" class="modal-overlay"></div>
 
-    <!-- Checkout -->
-    <div id="checkoutPage" class="checkout-page"></div>
+  <!-- MAIN -->
+  <main>
 
-    <!-- Success -->
-    <div id="successModal" class="success-modal"></div>
+    <!-- Seção Feed de Produtos -->
+    <section class="products-feed">
 
-    <!-- Toast -->
-    <div id="toast" class="toast-notification"></div>
+      <article class="product-card">
+        <img src="img/produto1.jpg" alt="Nome do produto">
+        <h2>Nome do Produto</h2>
+        <p>R$ 00,00</p>
+      </article>
 
-  </div>
+      <article class="product-card">
+        <img src="img/produto2.jpg" alt="Nome do produto">
+        <h2>Nome do Produto</h2>
+        <p>R$ 00,00</p>
+      </article>
 
-  <!-- JS externo -->
+      <!-- você pode repetir conforme necessário -->
+
+    </section>
+
+    <!-- Botão catálogo completo -->
+    <section class="catalog-button">
+      <button>Ver catálogo completo</button>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Artisan — Arte para se vestir.</p>
+  </footer>
+
+
   <script src="script.js"></script>
 </body>
+
 </html>
